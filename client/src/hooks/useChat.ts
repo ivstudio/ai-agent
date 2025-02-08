@@ -123,11 +123,11 @@ const useChat = ({
                     ...messagesRef.current,
                     { role: 'assistant', content: aiMessage },
                 ];
-            } catch (err: any) {
-                if (err.name !== 'AbortError') {
+            } catch (err) {
+                if ((err as Error).name !== 'AbortError') {
                     console.error('Chat Streaming Error:', err);
                     setError(
-                        err.message ||
+                        (err as Error).message ||
                             'An error occurred while fetching response.'
                     );
                 }
