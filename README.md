@@ -1,6 +1,6 @@
 # AI Chatbot POC
 
-This is a POC for an AI chatbot built with React and Express. 
+This is a POC for an AI chatbot built with React and Express.
 
 ## Key Features
 
@@ -21,11 +21,13 @@ This is a POC for an AI chatbot built with React and Express.
 - AI: OpenAI API
 
 ## 🚀Getting Started
-- `cd client && npm install`
-- `cd server && npm install`
-- Add your OpenAI API key to the environment variables.
+
+1. `npm install`
+2. `cd client && npm install`
+3. `cd server && npm install`
+4. Add your OpenAI API key to `server/.env`.
 
 ### Run Dev Mode
 
-To start the project in dev mode, **navigate to the root directory** and run: `npm run dev`.
+Start the project in dev mode, **navigate to the root directory** and run: `npm run dev`.
 This will launch both the server and client.
